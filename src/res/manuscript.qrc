@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="main_logo.svg">art/manuscript_logo.svg</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="bottom-pane.svg">icons/bottom-pane.svg</file>
+        <file alias="left-pane.svg">icons/left-pane.svg</file>
+        <file alias="build.svg">icons/build.svg</file>
+        <file alias="find.svg">icons/find.svg</file>
+        <file alias="picture.svg">icons/picture.svg</file>
+        <file alias="run.svg">icons/run.svg</file>
+        <file alias="save-all.svg">icons/save-all.svg</file>
+        <file alias="text-bold.svg">icons/text-bold.svg</file>
+        <file alias="text-italic.svg">icons/text-italic.svg</file>
+        <file alias="text-notes.svg">icons/text-notes.svg</file>
+        <file alias="git-import.svg">icons/git-import.svg</file>
+        <file alias="git-pull.svg">icons/git-pull.svg</file>
+        <file alias="git-push.svg">icons/git-push.svg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>interface.json</file>
+    </qresource>
+    <qresource prefix="/highlighter">
+        <file alias="dark.theme">highlighter/dark.theme</file>
+        <file alias="light.theme">highlighter/light.theme</file>
+    </qresource>
+</RCC>

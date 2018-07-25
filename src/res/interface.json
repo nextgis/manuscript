@@ -1,0 +1,299 @@
+{
+    "menus" : [
+        {
+            "name": "&File",
+            "actions": [
+                {
+                    "key": "file.open",
+                    "type": "action"
+                },
+                {
+                    "key": "file.import",
+                    "type": "action"
+                },
+                {
+                    "key": "file.save",
+                    "type": "action"
+                },
+                {
+                    "key": "file.saveall",
+                    "type": "action"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "key": "file.quit",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "&Edit",
+            "actions": [
+                {
+                    "key": "edit.undo",
+                    "type": "action"
+                },
+                {
+                    "key": "edit.redo",
+                    "type": "action"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "key": "edit.cut",
+                    "type": "action"
+                },
+                {
+                    "key": "edit.copy",
+                    "type": "action"
+                },
+                {
+                    "key": "edit.paste",
+                    "type": "action"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "key": "edit.find",
+                    "type": "action"
+                },
+                {
+                    "key": "edit.findinfiles",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "&Format",
+            "actions": [
+                {
+                    "key": "format.h1",
+                    "type": "action"
+                },
+                {
+                    "key": "format.h2",
+                    "type": "action"
+                },
+                {
+                    "key": "format.h3",
+                    "type": "action"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "key": "format.bold",
+                    "type": "action"
+                },
+                {
+                    "key": "format.italic",
+                    "type": "action"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "name": "&Notes",
+                    "type": "menu",
+                    "actions": [
+                        {
+                            "key": "format.notes.note",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.notes.warning",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.notes.tip",
+                            "type": "action"
+                        }
+                    ]
+                },
+                {
+                    "key": "format.insertpicture",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "&Build",
+            "actions": [
+                {
+                    "key": "build.make",
+                    "type": "action"
+                },
+                {
+                    "key": "build.run",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "&Git",
+            "actions": [
+                {
+                    "key": "git.push",
+                    "type": "action"
+                },
+                {
+                    "key": "git.pull",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "&Options",
+            "actions": [
+                {
+                    "key": "options.preferences",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "&Help",
+            "actions": [
+                {
+                    "key": "help.about",
+                    "type": "action"
+                }
+            ]
+        }
+    ],
+    "toolbars" : [
+        {
+            "name": "File",
+            "allowedAreas": ["top", "bottom"],
+            "actions": [
+                {
+                    "key": "file.open",
+                    "type": "action"
+                },
+                {
+                    "key": "file.import",
+                    "type": "action"
+                },
+                {
+                    "key": "file.save",
+                    "type": "action"
+                },
+                {
+                    "key": "file.saveall",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "Edit",
+            "allowedAreas": ["top", "bottom"],
+            "actions": [
+                {
+                    "key": "edit.undo",
+                    "type": "action"
+                },
+                {
+                    "key": "edit.redo",
+                    "type": "action"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "key": "edit.cut",
+                    "type": "action"
+                },
+                {
+                    "key": "edit.copy",
+                    "type": "action"
+                },
+                {
+                    "key": "edit.paste",
+                    "type": "action"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "key": "edit.find",
+                    "type": "action"
+                },
+                {
+                    "key": "edit.findinfiles",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "Format",
+            "allowedAreas": ["top", "bottom"],
+            "actions": [
+                {
+                    "key": "format.bold",
+                    "type": "action"
+                },
+                {
+                    "key": "format.italic",
+                    "type": "action"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "key": "format.insertpicture",
+                    "type": "action"
+                },
+                {
+                    "key": "format.notes",
+                    "type": "menu",
+                    "actions": [
+                        {
+                            "key": "format.notes.note",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.notes.warning",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.notes.tip",
+                            "type": "action"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Build",
+            "allowedAreas": ["top", "bottom"],
+            "actions": [
+                {
+                    "key": "build.make",
+                    "type": "action"
+                },
+                {
+                    "key": "build.run",
+                    "type": "action"
+                }
+            ]
+        },
+        {
+            "name": "Git",
+            "allowedAreas": ["top", "bottom"],
+            "actions": [
+                {
+                    "key": "git.push",
+                    "type": "action"
+                },
+                {
+                    "key": "git.pull",
+                    "type": "action"
+                }
+            ]
+        }
+    ]
+}
