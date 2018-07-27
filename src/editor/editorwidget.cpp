@@ -149,6 +149,7 @@ void MSEditorWidget::select(const QString &filePath, int line)
         QFile file(filePath);
         file.open(QFile::ReadOnly | QFile::Text);
         QTextStream in(&file);
+        in.setCodec("UTF-8");
         QString all = in.readAll();
         doc->setPlainText(all);
         QPlainTextDocumentLayout *layout = new QPlainTextDocumentLayout(doc);

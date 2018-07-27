@@ -140,7 +140,7 @@ bool MSRepoPathWizardPage::validatePage()
     m_execFailed = false;
     ui->progressBar->setValue(0);
     ui->progressBar->show();
-    ui->progressEdit->show();
+    //ui->progressEdit->show();
 
     QStringList arguments;
     arguments << "clone" << "--progress" <<

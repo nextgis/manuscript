@@ -23,6 +23,7 @@
 
 #include <QAbstractItemModel>
 #include <QIcon>
+#include <QMutex>
 #include <QString>
 #include <QStringList>
 #include <QTextDocument>

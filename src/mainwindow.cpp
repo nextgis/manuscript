@@ -50,6 +50,11 @@ MSMainWindow::MSMainWindow() : NGMainWindow(),
     g_wnd = this;
     setWindowIcon(QIcon(":/images/main_logo.svg"));
     setWindowTitle(tr(APP_NAME));
+    
+    QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono.ttf" );
+    QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono-Bold.ttf" );
+    QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono-BoldOblique.ttf" );
+    QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono-Oblique.ttf" );
 }
 
 MSMainWindow::~MSMainWindow()

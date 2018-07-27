@@ -478,6 +478,7 @@ bool FilesModel::saveDoc(const QString &filePath)
             }
 
             QTextStream out(&outfile);
+            out.setCodec("UTF-8");
             out << fileItem->doc->toPlainText();
 
             fileItem->doc->setModified(false);
@@ -930,6 +931,7 @@ bool MSProject::open(const QString &path)
     }
 
     QTextStream in(&inputFile);
+    in.setCodec("UTF-8");
     while (!in.atEnd()) {
         QString line = in.readLine().trimmed();
         if(line.startsWith("source_suffix", Qt::CaseInsensitive)) {
@@ -995,6 +997,7 @@ void MSProject::parseRstFile(const QString &rstFileStr, MSArticle *parent)
     }
 
     QTextStream in(&file);
+    in.setCodec("UTF-8");
     parseRstFile(in, rstFileStr, parent);
 
     if(rstFileStr.indexOf(m_masterDoc) != -1) {
@@ -1138,6 +1141,7 @@ void MSProject::parseRstFile(QTextStream &in, const QString &rstFileStr,
                     if(tocFile && tocFile->doc) {
                         QString content = tocFile->doc->toPlainText();
                         QTextStream in(&content);
+                        in.setCodec("UTF-8");
                         parseRstFile(in, tocFile->file, h1);
                     } else if(rstDoc.isFile()) {
                         parseRstFile(rstDoc.absoluteFilePath(), h1);
@@ -1213,6 +1217,7 @@ rstItem *MSProject::glossaryItem(const QString &term) const
     QString path = getFileByName("glossary.rst");
     rstFile *fileItem = m_files->fileDoc(path);
     QTextStream in;
+    in.setCodec("UTF-8");
     QString content;
     QFile file(path);
     if(fileItem) {
@@ -1251,6 +1256,7 @@ void MSProject::update(const QString &filePath)
     }
     QString content = doc->doc->toPlainText();
     QTextStream in(&content);
+    in.setCodec("UTF-8");
 
     // Remove all bookmarks, images and articles with filePath
     MSArticle *article = m_articles->itemByPath(filePath);
@@ -1322,6 +1328,7 @@ void MSProject::addArticle(const QString &name, const QString &filePath,
     QFile tocFile(tocFilePath);
     QTextDocument *textDoc = nullptr;
     QTextStream in;
+    in.setCodec("UTF-8");
     QString content;
     bool isOpened = false;
     if(docFile) {

@@ -34,10 +34,6 @@
 
 static QRegularExpression listPattern("(^\\s*\\*\\s+)|(^\\s*#\\.\\s+)|(^\\s*\\d*\\.\\s+)");
 
-static QIcon gWarningIcon(":/icons/warning-icon.svg");
-static QIcon gErrorIcon(":/icons/error-icon.svg");
-static QIcon gInfoIcon(":/icons/info-icon.svg");
-
 ////////////////////////////////////////////////////////////////////////////////
 /// RstBlockUserData
 ////////////////////////////////////////////////////////////////////////////////
@@ -99,6 +95,9 @@ bool RstBlockUserData::addToolTipContent(QLayout *target, const QString &text)
 
 QIcon RstBlockUserData::iconFor(RstBlockUserData::TextMarkType type)
 {
+    static QIcon gWarningIcon(":/icons/warning-icon.svg");
+    static QIcon gErrorIcon(":/icons/error-icon.svg");
+    static QIcon gInfoIcon(":/icons/info-icon.svg");
     switch (type) {
     case Error:
         return gErrorIcon;
