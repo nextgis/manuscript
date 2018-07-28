@@ -46,8 +46,13 @@ MSEditorWidget::MSEditorWidget(QWidget *parent) :
     m_filesComboBox->setProperty("panelwidget", true);
     MSProject &project = MSMainWindow::instance()->project();
     m_filesComboBox->setModel(project.filesModel());
+#if QT_VERSION >= 0x050700
     connect(m_filesComboBox, QOverload<const QString &>::of(&QComboBox::activated),
             this, &MSEditorWidget::onFilesTextChanged);
+#else
+    connect(m_filesComboBox, SIGNAL(activated(const QString &)),
+            this, SLOT(onFilesTextChanged(const QString &)));
+#endif
 
     NGStyledBar *toolBar = new NGStyledBar(this);
     QHBoxLayout *toolBarLayout = new QHBoxLayout;
@@ -83,8 +88,13 @@ MSEditorWidget::MSEditorWidget(QWidget *parent) :
 
 //    connect(m_articlesTree, QOverload<const QModelIndex &>::of(&QTreeView::clicked),
 //                         MSMainWindow::instance(), &MSMainWindow::onNavigationTreeClicked);
+#if QT_VERSION >= 0x050700
     connect(m_articlesComboBox, QOverload<const QString &>::of(&QComboBox::activated),
             this, &MSEditorWidget::onArticlesTextChanged);
+#else
+    connect(m_articlesComboBox, SIGNAL(activated(const QString &)),
+            this, SLOT(onArticlesTextChanged(const QString &)));
+#endif
 
     m_navPanelButton = new QToolButton();
     m_navPanelButton->setIcon(QIcon(":/icons/left-pane.svg"));

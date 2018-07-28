@@ -46,6 +46,14 @@ if(WITH_Qt5_EXTERNAL)
 endif()
 find_anyproject(NGSTD REQUIRED COMPONENTS core5 framework5)
 
+if(CMAKE_VERSION VERSION_LESS "3.1")
+    if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")
+    endif()
+else()
+    set(CMAKE_CXX_STANDARD 11)
+endif()
+
 qt5_add_resources(RESOURCES res/manuscript.qrc)
 
 set(PROJECT_HEADERS

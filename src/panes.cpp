@@ -45,11 +45,19 @@ QWidget *ArticlesPane::widget() const
     QTreeView *w = new QTreeView();
     w->setModel(m_model);
     w->setHeaderHidden(true);
+#if QT_VERSION >= 0x050700
     QObject::connect(w, QOverload<const QModelIndex &>::of(&QTreeView::clicked),
                      m_mainWindow, &MSMainWindow::onNavigationTreeClicked);
-    w->setContextMenuPolicy(Qt::CustomContextMenu);
     QObject::connect(w, QOverload<const QPoint &>::of(&QTreeView::customContextMenuRequested),
                      m_mainWindow, &MSMainWindow::onArticlesContextMenu);
+#else
+    QObject::connect(w, SIGNAL(clicked(const QModelIndex &)),
+                     m_mainWindow, SLOT(onNavigationTreeClicked(const QModelIndex &)));
+    QObject::connect(w, SIGNAL(customContextMenuRequested(const QPoint &)),
+                     m_mainWindow, SLOT(onArticlesContextMenu(const QPoint &)));
+#endif
+    w->setContextMenuPolicy(Qt::CustomContextMenu);
+
 //    DEBUG: w->setStyleSheet("background-color: green;");
     return w;
 }
@@ -80,8 +88,13 @@ QWidget *PicturesPane::widget() const
     QTreeView *w = new QTreeView();
     w->setModel(m_model);
     w->setRootIsDecorated(false);
+#if QT_VERSION >= 0x050700
     QObject::connect(w, QOverload<const QModelIndex &>::of(&QTreeView::clicked),
                      m_mainWindow, &MSMainWindow::onNavigationClicked);
+#else
+     QObject::connect(w, SIGNAL(clicked(const QModelIndex &)),
+                      m_mainWindow, SLOT(onNavigationClicked(const QModelIndex &)));
+#endif
 //    DEBUG: w->setStyleSheet("background-color: blue;");
     return w;
 }
@@ -111,8 +124,13 @@ QWidget *BookmarksPane::widget() const
     QTreeView *w = new QTreeView();
     w->setModel(m_model);
     w->setRootIsDecorated(false);
+#if QT_VERSION >= 0x050700
     QObject::connect(w, QOverload<const QModelIndex &>::of(&QTreeView::clicked),
                      m_mainWindow, &MSMainWindow::onNavigationClicked);
+#else
+    QObject::connect(w, SIGNAL(clicked(const QModelIndex &)),
+                     m_mainWindow, SLOT(onNavigationClicked(const QModelIndex &)));
+#endif
 //    DEBUG: w->setStyleSheet("background-color: yellow;");
     return w;
 }
@@ -143,8 +161,13 @@ QWidget *FilesPane::widget() const
     w->setModel(m_model);
     w->setRootIsDecorated(false);
     w->header()->hide();
+#if QT_VERSION >= 0x050700
     QObject::connect(w, QOverload<const QModelIndex &>::of(&QTreeView::clicked),
                      m_mainWindow, &MSMainWindow::onNavigationClicked);
+#else
+    QObject::connect(w, SIGNAL(clicked(const QModelIndex &)),
+                     m_mainWindow, SLOT(onNavigationClicked(const QModelIndex &)));
+#endif
 //    DEBUG: w->setStyleSheet("background-color: yellow;");
     return w;
 }
@@ -153,4 +176,3 @@ QIcon FilesPane::icon() const
 {
     return QIcon(":/icons/text.svg");
 }
-
