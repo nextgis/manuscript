@@ -17,6 +17,8 @@ Features:
 
 ![Screenshot_1](/art/manuscript_macos_ru.png)
 
+![Screenshot_2](/art/manuscript_win_ru.png)
+
 # License
 
 This program is licensed under GNU GPL v2 or any later version.

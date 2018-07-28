@@ -211,16 +211,7 @@ QPoint ToolTip::offsetFromPosition()
 
 void ToolTip::showTip()
 {
-#if !defined(QT_NO_EFFECTS) && !defined(Q_OS_MAC)
-    if (QApplication::isEffectEnabled(Qt::UI_FadeTooltip))
-        qFadeEffect(m_tip);
-    else if (QApplication::isEffectEnabled(Qt::UI_AnimateTooltip))
-        qScrollEffect(m_tip);
-    else
-        m_tip->show();
-#else
     m_tip->show();
-#endif
 }
 
 void ToolTip::hide()

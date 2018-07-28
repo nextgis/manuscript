@@ -39,7 +39,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_ICON1               ICON    DISCARDABLE     "manuscript.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res/art/manuscript_logo.ico"
 //#endif    
 /////////////////////////////////////////////////////////////////////////////
 
@@ -67,8 +67,8 @@ IDI_ICON1               ICON    DISCARDABLE     "manuscript.ico"
 #endif
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION        MANUSCRIPT_MAJOR_VERSION,MANUSCRIPT_MINOR_VERSION,MANUSCRIPT_RELEASE_NUMBER,0
- PRODUCTVERSION     MANUSCRIPT_MAJOR_VERSION,MANUSCRIPT_MINOR_VERSION,MANUSCRIPT_RELEASE_NUMBER,0
+ FILEVERSION        MANUSCRIPT_MAJOR_VERSION,MANUSCRIPT_MINOR_VERSION,MANUSCRIPT_PATCH_NUMBER,0
+ PRODUCTVERSION     MANUSCRIPT_MAJOR_VERSION,MANUSCRIPT_MINOR_VERSION,MANUSCRIPT_PATCH_NUMBER,0
  FILEFLAGSMASK      0x3fL
  FILEFLAGS DLL_FLAGS
  FILEOS             0x4L
@@ -86,14 +86,14 @@ BEGIN
 #else
             VALUE "FileDescription", APP_NAME " (x86) for Windows\0"
 #endif
-            VALUE "FileVersion", MANUSCRIPT_VERSION_NUM_DOT_STRING "\0"
+            VALUE "FileVersion", MANUSCRIPT_VERSION_STRING "\0"
             VALUE "InternalName", APP_NAME "\0"
             VALUE "LegalCopyright", "Copyright NextGIS\0"
             VALUE "LegalTrademarks", PACKAGE_VENDOR "\0"
             VALUE "OriginalFilename", APP_NAME ".exe\0"
             VALUE "PrivateBuild", "\0"
             VALUE "ProductName", APP_NAME "\0"
-            VALUE "ProductVersion", MANUSCRIPT_VERSION_NUM_DOT_STRING "\0"
+            VALUE "ProductVersion", MANUSCRIPT_VERSION_STRING "\0"
             VALUE "SpecialBuild", "\0"            
         END
     END

@@ -24,4 +24,10 @@
         <file alias="dark.theme">highlighter/dark.theme</file>
         <file alias="light.theme">highlighter/light.theme</file>
     </qresource>
+    <qresource prefix="/fonts">
+        <file alias="DejaVuSansMono.ttf">fonts/DejaVuSansMono.ttf</file>
+        <file alias="DejaVuSansMono-Oblique.ttf">fonts/DejaVuSansMono-Oblique.ttf</file>
+        <file alias="DejaVuSansMono-BoldOblique.ttf">fonts/DejaVuSansMono-BoldOblique.ttf</file>
+        <file alias="DejaVuSansMono-Bold.ttf">fonts/DejaVuSansMono-Bold.ttf</file>
+    </qresource>    
 </RCC>

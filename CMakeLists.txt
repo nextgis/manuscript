@@ -32,7 +32,7 @@ if(NOT DEFINED PACKAGE_VENDOR)
     set(PACKAGE_VENDOR nextgis)
 endif()
 
-add_definitions(-DPACKAGE_VENDOR=${PACKAGE_VENDOR})
+add_definitions(-DPACKAGE_VENDOR="${PACKAGE_VENDOR}")
 
 if(APPLE)
     set(OSX_FRAMEWORK ON)

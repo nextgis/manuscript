@@ -23,6 +23,8 @@
 #include "ui_submoduleswizardpage.h"
 
 #include <QDir>
+#include <QFile>
+#include <QTextStream>
 
 MSSubmodulesWizardPage::MSSubmodulesWizardPage(QWidget *parent) :
     QWizardPage(parent),
@@ -119,7 +121,7 @@ bool MSSubmodulesWizardPage::validatePage()
             submodules << item->text();
         }
     }
-
+    
     ui->progressBar->setValue(0);
     ui->progressBar->setMaximum(submodules.count() * 300);
     ui->progressBar->show();
@@ -127,14 +129,63 @@ bool MSSubmodulesWizardPage::validatePage()
     QMap<QString, QVariant> branchMap = wizard()->property("branches").toMap();
 
     QString repoPath = field("clonePath").toString();
-    m_process.setWorkingDirectory(repoPath);
+    
+    // In case the submodule has prefix 'git@github.com:' switch to https://github.com/
+    // Replace : to / and git@ to https://
+    
+    struct RepositoryInfo {
+        QString path;
+        QString url;
+    };
+    
+    QMap<QString, struct RepositoryInfo> repositoriesInfo;
+    
+    QFile file(repoPath + QDir::separator() + ".gitmodules");
+    if (!file.open(QIODevice::ReadOnly)) {
+        return false;
+    }
+
+    QTextStream in(&file);
+    in.setCodec("UTF-8");
+    QString submoduleName, submodulePath, submoduleUrl;
+    int pos = -1;
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        if(line.startsWith("[submodule \"")) {
+            submoduleName = line.mid(12);
+            submoduleName = submoduleName.replace("\"]", "").trimmed();
+        }
+        else if((pos = line.indexOf("url = ")) != -1) {
+            submoduleUrl = line.mid(pos + 6).trimmed();
+            submoduleUrl.replace(':', '/');
+            submoduleUrl.replace("git@", "https://");
+        }
+        else if((pos = line.indexOf("path = ")) != -1) {
+            submodulePath = line.mid(pos + 7).trimmed();
+        }
+        
+        if(!submoduleName.isEmpty() && !submodulePath.isEmpty() && !submoduleUrl.isEmpty()) {
+            repositoriesInfo[submoduleName] = {submodulePath, submoduleUrl};
+            submoduleName.clear();
+            submodulePath.clear();
+            submoduleUrl.clear();
+        }
+    }
 
     QApplication::setOverrideCursor(Qt::WaitCursor);
 
     for(const QString &submodule : submodules) {
         QStringList arguments;
-        arguments << "submodule" << "update" << "--progress" << "--init" << submodule;
-
+        
+//#ifdef Q_OS_WIN
+        struct RepositoryInfo repoInfo = repositoriesInfo[submodule];
+        
+        arguments << "clone" << "--recurse-submodules" << "--progress" << repoInfo.url << QDir::toNativeSeparators(repoPath + QDir::separator() + repoInfo.path);
+        
+//#else        
+//        arguments << "submodule" << "update" << "--init" << "--recursive" << "--progress" << submodule;
+//        m_process.setWorkingDirectory(repoPath);
+//#endif        
         m_process.start("git", arguments, QIODevice::ReadOnly);
         m_process.closeWriteChannel();
 

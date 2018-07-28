@@ -21,11 +21,10 @@
 #include "application.h"
 #include "framework/application.h"
 
-
 int main(int argc, char *argv[])
-{
+{    
     Q_INIT_RESOURCE(manuscript);
-
+    
     MSApplication app;
     app.init(argc, argv);
     return app.exec();
