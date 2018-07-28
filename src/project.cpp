@@ -1230,7 +1230,8 @@ rstItem *MSProject::glossaryItem(const QString &term) const
 
     QString line;
     int pos = 0;
-    while(in.readLineInto(&line)) {
+    while (!in.atEnd()) {
+        line = in.readLine();
         if(line.startsWith("   " + term)) {
             return new rstItem({term, "", path, pos});
         }
@@ -1353,8 +1354,8 @@ void MSProject::addArticle(const QString &name, const QString &filePath,
     int beginToc = 0;
     QString currentLine;
     QString allStr;
-    while (in.readLineInto(&currentLine)) {
-
+    while (!in.atEnd()) {
+        currentLine = in.readLine(); 
         qDebug() << currentLine;
         if(currentLine.startsWith(".. toctree::")) {
             qDebug() << "Find toctree";
