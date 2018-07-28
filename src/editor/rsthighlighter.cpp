@@ -205,7 +205,9 @@ void RstHighlighter::initFormats()
         QColor c = readColor(themeSettings.value("Colors/CodeSample").toString());
         QTextCharFormat format;
         format.setForeground(c);
+#if QT_VERSION >= 0x050500
         format.setFontWeight(QFont::Medium);
+#endif
         formats[RstHighlighter::CodeSample] = format;
     }
 
