@@ -239,7 +239,11 @@ void MSTextEditorWidget::requestUpdateLink(QMouseEvent *event, bool immediate)
                 updateLink();
             }
             else {
+#if QT_VERSION >= 0x050400
                 QTimer::singleShot(0, this, &MSTextEditorWidget::updateLink);
+#else
+                QTimer::singleShot(0, this, SLOT(updateLink()));
+#endif
             }
             return;
         }
@@ -1221,7 +1225,11 @@ void MSTextEditorWidget::scheduleUpdateHighlightScrollBar()
         return;
 
     m_scrollBarUpdateScheduled = true;
+#if QT_VERSION >= 0x050400
     QTimer::singleShot(0, this, &MSTextEditorWidget::updateHighlightScrollBarNow);
+#else
+    QTimer::singleShot(0, this, SLOT(updateHighlightScrollBarNow()));
+#endif
 }
 
 void MSTextEditorWidget::updateHighlightScrollBarNow()

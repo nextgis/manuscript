@@ -977,8 +977,13 @@ void DocumentManager::changedFile(const QString &fileName)
         d->m_changedFiles.insert(fileName);
     qCDebug(log) << "file change notification for" << fileName;
 
-    if (wasempty && !d->m_changedFiles.isEmpty())
+    if (wasempty && !d->m_changedFiles.isEmpty()) {
+#if QT_VERSION >= 0x050400
         QTimer::singleShot(200, this, &DocumentManager::checkForReload);
+#else
+        QTimer::singleShot(200, this, SLOT(checkForReload()));
+#endif
+    }
 }
 
 void DocumentManager::checkForReload()
@@ -1237,7 +1242,11 @@ void DocumentManager::checkForReload()
 
     d->m_blockActivated = false;
     // re-check in case files where modified while the dialog was open
+#if QT_VERSION >= 0x050400
     QTimer::singleShot(0, this, &DocumentManager::checkForReload);
+#else
+    QTimer::singleShot(0, this, SLOT(checkForReload()));
+#endif
 //    dump();
 }
 
