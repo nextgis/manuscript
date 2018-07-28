@@ -152,19 +152,18 @@ qt5_wrap_ui(UI_HEADERS
     ${UI_SOURCES}
 )
 
-#
-# set(TRANSLATIONS
-#     ${PROJECT_SOURCE_DIR}/translations/${PROJECT_NAME}_ru.ts
-#     ${PROJECT_SOURCE_DIR}/translations/${PROJECT_NAME}_en.ts
-# )
-#
-# unset(QM_FILES)
-# foreach(TRANSLATION ${TRANSLATIONS})
-#     if(EXISTS ${TRANSLATION})
-#         qt5_add_translation(QM_FILES ${TRANSLATION})
-#     endif()
-# endforeach()
-#
+set(TRANSLATIONS
+    ${PROJECT_SOURCE_DIR}/translations/${PROJECT_NAME}_ru.ts
+    ${PROJECT_SOURCE_DIR}/translations/${PROJECT_NAME}_en.ts
+)
+
+unset(QM_FILES)
+foreach(TRANSLATION ${TRANSLATIONS})
+    if(EXISTS ${TRANSLATION})
+        qt5_add_translation(QM_FILES ${TRANSLATION})
+    endif()
+endforeach()
+
 if(MSVC)
     set(PROJECT_SOURCES ${PROJECT_SOURCES} res/manuscript.rc)
 endif()
@@ -173,6 +172,8 @@ add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE ${MOC_SRCS} ${PROJECT_HEADERS
 
 if(OSX_FRAMEWORK)
     set_target_properties(${PROJECT_NAME} PROPERTIES INSTALL_RPATH "@executable_path/../../../../Library/Frameworks;@executable_path/../Frameworks")
+
+    set_property(SOURCE ${QM_FILES} PROPERTY MACOSX_PACKAGE_LOCATION "Resources/translations")
 endif()
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets ${NGSTD_LIBRARIES})
@@ -185,4 +186,8 @@ if(NOT SKIP_INSTALL_EXECUTABLES AND NOT SKIP_INSTALL_ALL )
         LIBRARY DESTINATION ${INSTALL_LIB_DIR} COMPONENT applications
         FRAMEWORK DESTINATION ${INSTALL_BIN_DIR}
     )
+endif()
+
+if(NOT SKIP_INSTALL_FILES AND NOT SKIP_INSTALL_ALL)
+    install(FILES ${QM_FILES} DESTINATION ${INSTALL_TRANSLATIONS_DIR})
 endif()

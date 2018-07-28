@@ -73,4 +73,5 @@ report_version(${PROJECT_NAME} ${VERSION})
 # end NOTE
 
 include(FindAnyProject)
+add_subdirectory(translations)
 add_subdirectory(src)
