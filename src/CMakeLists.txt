@@ -178,6 +178,8 @@ endif()
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets ${NGSTD_LIBRARIES})
 
+configure_file(${PROJECT_SOURCE_DIR}/cmake/manuscript.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/manuscript.desktop @ONLY)
+
 if(NOT SKIP_INSTALL_EXECUTABLES AND NOT SKIP_INSTALL_ALL )
     install(TARGETS ${INSTALL_TARGETS}
     #    EXPORT ${INSTALL_TARGETS}
@@ -190,4 +192,9 @@ endif()
 
 if(NOT SKIP_INSTALL_FILES AND NOT SKIP_INSTALL_ALL)
     install(FILES ${QM_FILES} DESTINATION ${INSTALL_TRANSLATIONS_DIR})
+endif()
+
+if(UNIX AND NOT OSX_FRAMEWORK)
+    install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/res/art/manuscript_logo.svg DESTINATION ${CMAKE_INSTALL_DATADIR}/pixmaps)
+    install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manuscript.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
 endif()

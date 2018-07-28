@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=@VERSION@
+Type=Application
+Name=NextGIS Manuscript
+Comment=reStructured text and Sphinx documentation editor
+Exec=manuscript
+Icon=manuscript
+Terminal=false
+X-MultipleArgs=false
+Categories=Editors;
+StartupNotify=true
+MimeType=application/x-manuscript;
