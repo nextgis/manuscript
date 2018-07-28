@@ -53,6 +53,11 @@ MSRepoPathWizardPage::MSRepoPathWizardPage(QWidget *parent) :
             this, &MSRepoPathWizardPage::error);
 
     setCommitPage(true);
+
+    // FIXME: On Ubuntu 16.04 button icon is not shown
+#ifdef Q_OS_LINUX
+    ui->selectFolder->setIcon(QIcon(":/icons/folder.svg"));
+#endif
 }
 
 MSRepoPathWizardPage::~MSRepoPathWizardPage()

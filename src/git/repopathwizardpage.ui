@@ -68,7 +68,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset theme=":icons/folder.svg"/>
+        <iconset theme=":/icons/folder.svg"/>
        </property>
        <property name="iconSize">
         <size>
