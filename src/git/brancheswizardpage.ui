@@ -29,7 +29,7 @@
      </column>
      <column>
       <property name="text">
-       <string notr="true">Branch</string>
+       <string>Branch</string>
       </property>
      </column>
     </widget>

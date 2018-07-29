@@ -57,16 +57,17 @@ MSMainWindow::MSMainWindow() : NGMainWindow(),
     QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono-BoldOblique.ttf" );
     QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono-Oblique.ttf" );
 
-    tr("&Edit");
-    tr("&Format");
-    tr("&Notes");
-    tr("&Build");
-    tr("&Git");
-    tr("&Options");
-    tr("Edit");
-    tr("Format");
-    tr("Build");
-    tr("Git");
+    QT_TRANSLATE_NOOP("NGMainWindow","&Edit");
+    QT_TRANSLATE_NOOP("NGMainWindow","&Format");
+    QT_TRANSLATE_NOOP("NGMainWindow","&Notes");
+    QT_TRANSLATE_NOOP("NGMainWindow","&Build");
+    QT_TRANSLATE_NOOP("NGMainWindow","&Git");
+    QT_TRANSLATE_NOOP("NGMainWindow","&Options");
+    QT_TRANSLATE_NOOP("NGMainWindow","Edit");
+    QT_TRANSLATE_NOOP("NGMainWindow","Format");
+    QT_TRANSLATE_NOOP("NGMainWindow","Build");
+    QT_TRANSLATE_NOOP("NGMainWindow","Git");
+    QT_TRANSLATE_NOOP("NGMainWindow","Notes");
 }
 
 MSMainWindow::~MSMainWindow()

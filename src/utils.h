@@ -48,7 +48,7 @@ inline void setDocumentFont(QTextDocument *doc) {
 #else
     font.setStyleHint(QFont::Monospace);
     font.setFamily("Ubuntu Mono");
-    font.setPointSize(12);
+    font.setPointSize(14);
 #endif
 
     font.setWeight(13);
