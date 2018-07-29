@@ -103,6 +103,22 @@ void MSRepoPathWizardPage::onStdErrReady()
                 ui->progressEdit->appendPlainText(str);
             }
         }
+        else if(str.startsWith("Получение объектов:")) {
+            QString percent = str.mid(20, 3).trimmed();
+            int value = percent.toInt();
+            ui->progressBar->setValue( value );
+            if(value == 100) {
+                ui->progressEdit->appendPlainText(str);
+            }
+        }
+        else if(str.startsWith("Определение изменений:")) {
+            QString percent = str.mid(23, 3).trimmed();
+            int value = percent.toInt();
+            ui->progressBar->setValue( value );
+            if(value == 100) {
+                ui->progressEdit->appendPlainText(str);
+            }
+        }
         else if(str.startsWith("Resolving deltas:")) {
             QString percent = str.mid(18, 3).trimmed();
             int value = percent.toInt();
