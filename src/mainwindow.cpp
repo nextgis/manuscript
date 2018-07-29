@@ -45,7 +45,8 @@ constexpr unsigned char maxRecentFiles = 5;
 static MSMainWindow *g_wnd = nullptr;
 
 MSMainWindow::MSMainWindow() : NGMainWindow(),
-    m_centralWidget(nullptr)
+    m_centralWidget(nullptr),
+    m_recentSeparator(nullptr)
 {
     g_wnd = this;
     setWindowIcon(QIcon(":/images/main_logo.svg"));
@@ -803,7 +804,8 @@ void MSMainWindow::updateRecentFileActions()
         recentFileActs[j]->setVisible(false);
     }
 
-    m_recentSeparator->setVisible(numRecentFiles > 0);
+    if(m_recentSeparator)
+        m_recentSeparator->setVisible(numRecentFiles > 0);
 }
 
 void MSMainWindow::storeExpandState()
