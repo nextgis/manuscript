@@ -19,7 +19,7 @@
     </message>
     <message>
         <location filename="../src/qtc/documentmanager.cpp" line="703"/>
-        <location filename="../src/qtc/documentmanager.cpp" line="1226"/>
+        <location filename="../src/qtc/documentmanager.cpp" line="1231"/>
         <source>File Error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -49,7 +49,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/qtc/documentmanager.cpp" line="1212"/>
+        <location filename="../src/qtc/documentmanager.cpp" line="1217"/>
         <source>Cannot reload %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -134,41 +134,46 @@
         <source>Repository/Submodule</source>
         <translation>Репозиторий/Подмодуль</translation>
     </message>
+    <message>
+        <location filename="../src/git/brancheswizardpage.ui" line="32"/>
+        <source>Branch</source>
+        <translation>Ветка</translation>
+    </message>
 </context>
 <context>
     <name>MSEditorWidget</name>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="61"/>
-        <location filename="../src/editor/editorwidget.cpp" line="91"/>
+        <location filename="../src/editor/editorwidget.cpp" line="66"/>
+        <location filename="../src/editor/editorwidget.cpp" line="101"/>
         <source>Show/hide navigation panel</source>
         <translation>Показать/скрыть панель навигации</translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="72"/>
+        <location filename="../src/editor/editorwidget.cpp" line="77"/>
         <source>&lt;no articles&gt;</source>
         <translation>&lt;нет разделов&gt;</translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="97"/>
+        <location filename="../src/editor/editorwidget.cpp" line="107"/>
         <source>Show/hide bottom panel</source>
         <translation>Показать/скрыть нижнюю панель</translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="179"/>
-        <location filename="../src/editor/editorwidget.cpp" line="191"/>
-        <location filename="../src/editor/editorwidget.cpp" line="387"/>
+        <location filename="../src/editor/editorwidget.cpp" line="190"/>
+        <location filename="../src/editor/editorwidget.cpp" line="202"/>
+        <location filename="../src/editor/editorwidget.cpp" line="398"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="179"/>
-        <location filename="../src/editor/editorwidget.cpp" line="191"/>
-        <location filename="../src/editor/editorwidget.cpp" line="387"/>
+        <location filename="../src/editor/editorwidget.cpp" line="190"/>
+        <location filename="../src/editor/editorwidget.cpp" line="202"/>
+        <location filename="../src/editor/editorwidget.cpp" line="398"/>
         <source>Files save failed</source>
         <translation>Ошибка сохранения файла</translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="374"/>
+        <location filename="../src/editor/editorwidget.cpp" line="385"/>
         <source>The document %1 has been modified.
 Do you want to save your changes?</source>
         <translation>Документ %1 был изменен.
@@ -242,284 +247,330 @@ Do you want to save your changes?</source>
         <translation>Разделы</translation>
     </message>
     <message>
-        <location filename="../src/panes.cpp" line="75"/>
+        <location filename="../src/panes.cpp" line="83"/>
         <source>Illustrations</source>
         <translation>Рисунки</translation>
     </message>
     <message>
-        <location filename="../src/panes.cpp" line="106"/>
+        <location filename="../src/panes.cpp" line="119"/>
         <source>Bookmarks</source>
         <translation>Закладки</translation>
     </message>
     <message>
-        <location filename="../src/panes.cpp" line="137"/>
+        <location filename="../src/panes.cpp" line="155"/>
         <source>Opened files</source>
         <translation>Открытые файлы</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="154"/>
+        <location filename="../src/mainwindow.cpp" line="171"/>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="166"/>
-        <location filename="../src/mainwindow.cpp" line="272"/>
+        <location filename="../src/mainwindow.cpp" line="183"/>
+        <location filename="../src/mainwindow.cpp" line="291"/>
         <source>Sel chars: %1, lines: %2</source>
         <translation>Выбрано симв.: %1, строк: %2</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="170"/>
-        <location filename="../src/mainwindow.cpp" line="271"/>
+        <location filename="../src/mainwindow.cpp" line="187"/>
+        <location filename="../src/mainwindow.cpp" line="290"/>
         <source>Pos line: %1, col: %2</source>
         <translation>Позиция строка: %1, символ: %2</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="189"/>
+        <location filename="../src/mainwindow.cpp" line="206"/>
         <source>The document has been modified.
 Do you want to save your changes?</source>
         <translation>Документ изменен.
 Сохранить изменения?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="223"/>
+        <location filename="../src/mainwindow.cpp" line="240"/>
         <source>Open project</source>
         <translation>Открыть проект</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="223"/>
+        <location filename="../src/mainwindow.cpp" line="240"/>
         <source>Project Files (conf.py)</source>
         <translation>Файлы проекта (conf.py)</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="278"/>
-        <location filename="../src/mainwindow.cpp" line="674"/>
+        <location filename="../src/mainwindow.cpp" line="297"/>
+        <location filename="../src/mainwindow.cpp" line="693"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="278"/>
+        <location filename="../src/mainwindow.cpp" line="297"/>
         <source>Failed to open</source>
         <translation>Не удалось открыть</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="283"/>
+        <location filename="../src/mainwindow.cpp" line="302"/>
         <source>Project loaded</source>
         <translation>Проект загружен</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="295"/>
+        <location filename="../src/mainwindow.cpp" line="314"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="296"/>
+        <location filename="../src/mainwindow.cpp" line="315"/>
         <source>The &lt;b&gt;%1&lt;/b&gt; application for edit and compile sphinx documentation&lt;br&gt;&lt;br&gt;%2 version: %3</source>
         <translation>Программа &lt;b&gt;%1&lt;/b&gt; предназначена для редактирования и компиляции документациии Sphinx&lt;br&gt;&lt;br&gt;%2 версия: %3</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="519"/>
+        <location filename="../src/mainwindow.cpp" line="538"/>
         <source>&amp;Save</source>
         <translation>&amp;Сохранить</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="521"/>
+        <location filename="../src/mainwindow.cpp" line="540"/>
         <source>Save file</source>
         <translation>Сохранить файл</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="531"/>
+        <location filename="../src/mainwindow.cpp" line="550"/>
         <source>Save &amp;All</source>
         <translation>Сохранить &amp;Все</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="533"/>
+        <location filename="../src/mainwindow.cpp" line="552"/>
         <source>Save all changed files</source>
         <translation>Сохранить все измененные файлы</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="538"/>
+        <location filename="../src/mainwindow.cpp" line="557"/>
         <source>Import from git</source>
         <translation>Импорт из git</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="540"/>
+        <location filename="../src/mainwindow.cpp" line="559"/>
         <source>Import project from git repository</source>
         <translation>Импортировать проект из репозитория git</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="545"/>
+        <location filename="../src/mainwindow.cpp" line="564"/>
         <source>&amp;Undo</source>
         <translation>О&amp;тмена</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="547"/>
+        <location filename="../src/mainwindow.cpp" line="566"/>
         <source>Undo edits</source>
         <translation>Отменить правки</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="552"/>
+        <location filename="../src/mainwindow.cpp" line="571"/>
         <source>&amp;Redo</source>
         <translation>Ве&amp;рнуть</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="554"/>
+        <location filename="../src/mainwindow.cpp" line="573"/>
         <source>Redo edits</source>
         <translation>Вернуть правки</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="559"/>
+        <location filename="../src/mainwindow.cpp" line="578"/>
         <source>&amp;Cut</source>
         <translation>В&amp;ырезать</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="561"/>
+        <location filename="../src/mainwindow.cpp" line="580"/>
         <source>Cut</source>
         <translation>Вырезать</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="566"/>
+        <location filename="../src/mainwindow.cpp" line="585"/>
         <source>&amp;Copy</source>
         <translation>&amp;Скопировать</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="568"/>
+        <location filename="../src/mainwindow.cpp" line="587"/>
         <source>Copy</source>
         <translation>Скопировать</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="573"/>
+        <location filename="../src/mainwindow.cpp" line="592"/>
         <source>&amp;Paste</source>
         <translation>&amp;Вставить</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="575"/>
+        <location filename="../src/mainwindow.cpp" line="594"/>
         <source>Paste</source>
         <translation>Вставить</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="581"/>
+        <location filename="../src/mainwindow.cpp" line="600"/>
         <source>&amp;Bold</source>
         <translation>&amp;Жирный</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="583"/>
+        <location filename="../src/mainwindow.cpp" line="602"/>
         <source>Make text bold</source>
         <translation>Сделать текст жирным</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="588"/>
+        <location filename="../src/mainwindow.cpp" line="607"/>
         <source>&amp;Italic</source>
         <translation>&amp;Курсив</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="590"/>
+        <location filename="../src/mainwindow.cpp" line="609"/>
         <source>Make text italic</source>
         <translation>Сделать текст курсивом</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="596"/>
+        <location filename="../src/mainwindow.cpp" line="615"/>
         <source>&amp;Make</source>
         <translation>С&amp;обрать</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="598"/>
+        <location filename="../src/mainwindow.cpp" line="617"/>
         <source>Make document</source>
         <translation>Собрать проект</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="603"/>
+        <location filename="../src/mainwindow.cpp" line="622"/>
         <source>&amp;Run</source>
         <translation>&amp;Запустить</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="605"/>
+        <location filename="../src/mainwindow.cpp" line="624"/>
         <source>View builded document</source>
         <translation>Просмотреть собранный проект</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="610"/>
+        <location filename="../src/mainwindow.cpp" line="62"/>
+        <location filename="../src/mainwindow.cpp" line="629"/>
         <source>&amp;Notes</source>
         <translation>&amp;Заметки</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="611"/>
+        <location filename="../src/mainwindow.cpp" line="60"/>
+        <source>&amp;Edit</source>
+        <translation>&amp;Правка</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="61"/>
+        <source>&amp;Format</source>
+        <translation>&amp;Формат</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="63"/>
+        <source>&amp;Build</source>
+        <translation>&amp;Сборка</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="64"/>
+        <source>&amp;Git</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="65"/>
+        <source>&amp;Options</source>
+        <translation>&amp;Опции</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="66"/>
+        <source>Edit</source>
+        <translation>Правка</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="67"/>
+        <source>Format</source>
+        <translation>Формат</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="68"/>
+        <source>Build</source>
+        <translation>Сборка</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="69"/>
+        <source>Git</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="630"/>
         <source>Show insert notes, tips, warnings menu</source>
         <translation>Отображает меню вставки заметок, советов и предупреждений</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="616"/>
+        <location filename="../src/mainwindow.cpp" line="635"/>
         <source>Note</source>
         <translation>Заметка</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="617"/>
+        <location filename="../src/mainwindow.cpp" line="636"/>
         <source>Add note</source>
         <translation>Добавить заметку</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="622"/>
+        <location filename="../src/mainwindow.cpp" line="641"/>
         <source>Tip</source>
         <translation>Совет</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="623"/>
+        <location filename="../src/mainwindow.cpp" line="642"/>
         <source>Add tip</source>
         <translation>Добавить совет</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="628"/>
+        <location filename="../src/mainwindow.cpp" line="647"/>
         <source>Warning</source>
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="629"/>
+        <location filename="../src/mainwindow.cpp" line="648"/>
         <source>Add warning</source>
         <translation>Добавить предупреждение</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="634"/>
+        <location filename="../src/mainwindow.cpp" line="653"/>
         <source>Push to git</source>
         <translation>Отправить в git</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="635"/>
+        <location filename="../src/mainwindow.cpp" line="654"/>
         <source>Push changes to git</source>
         <translation>Отправить правки в git</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="640"/>
+        <location filename="../src/mainwindow.cpp" line="659"/>
         <source>Pull from git</source>
         <translation>Получить из git</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="641"/>
+        <location filename="../src/mainwindow.cpp" line="660"/>
         <source>Pull changes from git</source>
         <translation>Получить правки из git</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="646"/>
+        <location filename="../src/mainwindow.cpp" line="665"/>
         <source>Add article</source>
         <translation>Добавить раздел</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="647"/>
+        <location filename="../src/mainwindow.cpp" line="666"/>
         <source>Add new article</source>
         <translation>Добавить новый раздел</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="665"/>
+        <location filename="../src/mainwindow.cpp" line="684"/>
         <source>There are unsaved changes.
 Do you want to save them?</source>
         <translation>Имеются несохраненные изменения.
 Сохранить их?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="674"/>
+        <location filename="../src/mainwindow.cpp" line="693"/>
         <source>Files save failed</source>
         <translation>Ошибка сохранения файла</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="789"/>
+        <location filename="../src/mainwindow.cpp" line="808"/>
         <source>&amp;%1 %2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -662,7 +713,7 @@ Do you want to save them?</source>
 <context>
     <name>MSProject</name>
     <message>
-        <location filename="../src/project.cpp" line="1030"/>
+        <location filename="../src/project.cpp" line="1033"/>
         <source>!!! Unnamed</source>
         <translation>!!! Без названия</translation>
     </message>
@@ -705,27 +756,27 @@ Do you want to save them?</source>
         <translation>Введите адрес репозитория и путь в вашей системе для клонирования.</translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="65"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="70"/>
         <source>Select folder to clone</source>
         <translation>Выберите директорию для клонирования</translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="150"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="155"/>
         <source>Started</source>
         <translation>Запущено</translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="159"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="164"/>
         <source>Finished</source>
         <translation>Завершено</translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="163"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="168"/>
         <source>Check submodules</source>
         <translation>Проверка подмодулей</translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="185"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="190"/>
         <source>Check branches</source>
         <translation>Проверка веток</translation>
     </message>
@@ -738,12 +789,12 @@ Do you want to save them?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/git/submoduleswizardpage.cpp" line="34"/>
+        <location filename="../src/git/submoduleswizardpage.cpp" line="36"/>
         <source>Submodules to clone</source>
         <translation>Подмодули для клонирования</translation>
     </message>
     <message>
-        <location filename="../src/git/submoduleswizardpage.cpp" line="35"/>
+        <location filename="../src/git/submoduleswizardpage.cpp" line="37"/>
         <source>Select repository submodules to clone.</source>
         <translation>Выберите подмодули для клонирования</translation>
     </message>
@@ -780,7 +831,7 @@ Do you want to save them?</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/project.cpp" line="1303"/>
+        <location filename="../src/project.cpp" line="1310"/>
         <source>Add your article text here.</source>
         <translation>Введите текст раздела сюда.</translation>
     </message>
@@ -788,47 +839,47 @@ Do you want to save them?</source>
 <context>
     <name>RstHighlighter</name>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="538"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="539"/>
         <source>Underline character count should be equal article name or greater</source>
         <translation>Количество символов в строке должно совпадать или превосходить длину имени раздела/подраздела</translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="547"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="548"/>
         <source>Need an empty line after the article</source>
         <translation>Пропущена пустая строка после заголовка раздела</translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="560"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="561"/>
         <source>No need empty line here</source>
         <translation>Лишняя пустая строка</translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="572"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="573"/>
         <source>File path should consist only ASCII characters</source>
         <translation>В пути к файлу допускаются только ASCII символы</translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="587"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="588"/>
         <source>File not exists</source>
         <translation>Файл не создан</translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="600"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="601"/>
         <source>Need an empty line after the reference</source>
         <translation>Пропущеня пустая строка после закладки</translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="625"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="626"/>
         <source>Term &apos;%1&apos; is not exists in glossary</source>
         <translation>Термин &apos;%1&apos; не содержится в глоссарии</translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="647"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="648"/>
         <source>Reference with name &apos;%1&apos; is not exists</source>
         <translation>Отсутсвует закладка с именем &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="664"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="665"/>
         <source>Image with name &apos;%1&apos; is not exists</source>
         <translation>Отсутсвует рисунок с именем &apos;%1&apos;</translation>
     </message>
@@ -836,7 +887,7 @@ Do you want to save them?</source>
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/project.cpp" line="898"/>
+        <location filename="../src/project.cpp" line="899"/>
         <source>New project</source>
         <translation>Новый проект</translation>
     </message>
@@ -844,7 +895,7 @@ Do you want to save them?</source>
 <context>
     <name>project</name>
     <message>
-        <location filename="../src/project.cpp" line="507"/>
+        <location filename="../src/project.cpp" line="508"/>
         <source>&lt;no document&gt;</source>
         <translation>&lt;без документа&gt;</translation>
     </message>

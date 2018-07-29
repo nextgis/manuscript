@@ -19,7 +19,7 @@
     </message>
     <message>
         <location filename="../src/qtc/documentmanager.cpp" line="703"/>
-        <location filename="../src/qtc/documentmanager.cpp" line="1226"/>
+        <location filename="../src/qtc/documentmanager.cpp" line="1231"/>
         <source>File Error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -49,7 +49,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/qtc/documentmanager.cpp" line="1212"/>
+        <location filename="../src/qtc/documentmanager.cpp" line="1217"/>
         <source>Cannot reload %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -138,37 +138,37 @@
 <context>
     <name>MSEditorWidget</name>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="61"/>
-        <location filename="../src/editor/editorwidget.cpp" line="91"/>
+        <location filename="../src/editor/editorwidget.cpp" line="66"/>
+        <location filename="../src/editor/editorwidget.cpp" line="101"/>
         <source>Show/hide navigation panel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="72"/>
+        <location filename="../src/editor/editorwidget.cpp" line="77"/>
         <source>&lt;no articles&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="97"/>
+        <location filename="../src/editor/editorwidget.cpp" line="107"/>
         <source>Show/hide bottom panel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="179"/>
-        <location filename="../src/editor/editorwidget.cpp" line="191"/>
-        <location filename="../src/editor/editorwidget.cpp" line="387"/>
+        <location filename="../src/editor/editorwidget.cpp" line="190"/>
+        <location filename="../src/editor/editorwidget.cpp" line="202"/>
+        <location filename="../src/editor/editorwidget.cpp" line="398"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="179"/>
-        <location filename="../src/editor/editorwidget.cpp" line="191"/>
-        <location filename="../src/editor/editorwidget.cpp" line="387"/>
+        <location filename="../src/editor/editorwidget.cpp" line="190"/>
+        <location filename="../src/editor/editorwidget.cpp" line="202"/>
+        <location filename="../src/editor/editorwidget.cpp" line="398"/>
         <source>Files save failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/editorwidget.cpp" line="374"/>
+        <location filename="../src/editor/editorwidget.cpp" line="385"/>
         <source>The document %1 has been modified.
 Do you want to save your changes?</source>
         <translation type="unfinished"></translation>
@@ -241,282 +241,328 @@ Do you want to save your changes?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/panes.cpp" line="75"/>
+        <location filename="../src/panes.cpp" line="83"/>
         <source>Illustrations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/panes.cpp" line="106"/>
+        <location filename="../src/panes.cpp" line="119"/>
         <source>Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/panes.cpp" line="137"/>
+        <location filename="../src/panes.cpp" line="155"/>
         <source>Opened files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="154"/>
+        <location filename="../src/mainwindow.cpp" line="171"/>
         <source>&amp;File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="166"/>
-        <location filename="../src/mainwindow.cpp" line="272"/>
+        <location filename="../src/mainwindow.cpp" line="183"/>
+        <location filename="../src/mainwindow.cpp" line="291"/>
         <source>Sel chars: %1, lines: %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="170"/>
-        <location filename="../src/mainwindow.cpp" line="271"/>
+        <location filename="../src/mainwindow.cpp" line="187"/>
+        <location filename="../src/mainwindow.cpp" line="290"/>
         <source>Pos line: %1, col: %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="189"/>
+        <location filename="../src/mainwindow.cpp" line="206"/>
         <source>The document has been modified.
 Do you want to save your changes?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="223"/>
+        <location filename="../src/mainwindow.cpp" line="240"/>
         <source>Open project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="223"/>
+        <location filename="../src/mainwindow.cpp" line="240"/>
         <source>Project Files (conf.py)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="278"/>
-        <location filename="../src/mainwindow.cpp" line="674"/>
+        <location filename="../src/mainwindow.cpp" line="297"/>
+        <location filename="../src/mainwindow.cpp" line="693"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="278"/>
+        <location filename="../src/mainwindow.cpp" line="297"/>
         <source>Failed to open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="283"/>
+        <location filename="../src/mainwindow.cpp" line="302"/>
         <source>Project loaded</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="295"/>
+        <location filename="../src/mainwindow.cpp" line="314"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="296"/>
+        <location filename="../src/mainwindow.cpp" line="315"/>
         <source>The &lt;b&gt;%1&lt;/b&gt; application for edit and compile sphinx documentation&lt;br&gt;&lt;br&gt;%2 version: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="519"/>
+        <location filename="../src/mainwindow.cpp" line="538"/>
         <source>&amp;Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="521"/>
+        <location filename="../src/mainwindow.cpp" line="540"/>
         <source>Save file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="531"/>
+        <location filename="../src/mainwindow.cpp" line="550"/>
         <source>Save &amp;All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="533"/>
+        <location filename="../src/mainwindow.cpp" line="552"/>
         <source>Save all changed files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="538"/>
+        <location filename="../src/mainwindow.cpp" line="557"/>
         <source>Import from git</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="540"/>
+        <location filename="../src/mainwindow.cpp" line="559"/>
         <source>Import project from git repository</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="545"/>
+        <location filename="../src/mainwindow.cpp" line="564"/>
         <source>&amp;Undo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="547"/>
+        <location filename="../src/mainwindow.cpp" line="566"/>
         <source>Undo edits</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="552"/>
+        <location filename="../src/mainwindow.cpp" line="571"/>
         <source>&amp;Redo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="554"/>
+        <location filename="../src/mainwindow.cpp" line="573"/>
         <source>Redo edits</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="559"/>
+        <location filename="../src/mainwindow.cpp" line="578"/>
         <source>&amp;Cut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="561"/>
+        <location filename="../src/mainwindow.cpp" line="580"/>
         <source>Cut</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="566"/>
+        <location filename="../src/mainwindow.cpp" line="585"/>
         <source>&amp;Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="568"/>
+        <location filename="../src/mainwindow.cpp" line="587"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="573"/>
+        <location filename="../src/mainwindow.cpp" line="592"/>
         <source>&amp;Paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="575"/>
+        <location filename="../src/mainwindow.cpp" line="594"/>
         <source>Paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="581"/>
+        <location filename="../src/mainwindow.cpp" line="600"/>
         <source>&amp;Bold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="583"/>
+        <location filename="../src/mainwindow.cpp" line="602"/>
         <source>Make text bold</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="588"/>
+        <location filename="../src/mainwindow.cpp" line="607"/>
         <source>&amp;Italic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="590"/>
+        <location filename="../src/mainwindow.cpp" line="609"/>
         <source>Make text italic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="596"/>
+        <location filename="../src/mainwindow.cpp" line="615"/>
         <source>&amp;Make</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="598"/>
+        <location filename="../src/mainwindow.cpp" line="617"/>
         <source>Make document</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="603"/>
+        <location filename="../src/mainwindow.cpp" line="622"/>
         <source>&amp;Run</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="605"/>
+        <location filename="../src/mainwindow.cpp" line="624"/>
         <source>View builded document</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="610"/>
+        <location filename="../src/mainwindow.cpp" line="62"/>
+        <location filename="../src/mainwindow.cpp" line="629"/>
         <source>&amp;Notes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="611"/>
+        <location filename="../src/mainwindow.cpp" line="60"/>
+        <source>&amp;Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="61"/>
+        <source>&amp;Format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="63"/>
+        <source>&amp;Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="64"/>
+        <source>&amp;Git</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="65"/>
+        <source>&amp;Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="66"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="67"/>
+        <source>Format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="68"/>
+        <source>Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="69"/>
+        <source>Git</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="630"/>
         <source>Show insert notes, tips, warnings menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="616"/>
+        <location filename="../src/mainwindow.cpp" line="635"/>
         <source>Note</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="617"/>
+        <location filename="../src/mainwindow.cpp" line="636"/>
         <source>Add note</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="622"/>
+        <location filename="../src/mainwindow.cpp" line="641"/>
         <source>Tip</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="623"/>
+        <location filename="../src/mainwindow.cpp" line="642"/>
         <source>Add tip</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="628"/>
+        <location filename="../src/mainwindow.cpp" line="647"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="629"/>
+        <location filename="../src/mainwindow.cpp" line="648"/>
         <source>Add warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="634"/>
+        <location filename="../src/mainwindow.cpp" line="653"/>
         <source>Push to git</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="635"/>
+        <location filename="../src/mainwindow.cpp" line="654"/>
         <source>Push changes to git</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="640"/>
+        <location filename="../src/mainwindow.cpp" line="659"/>
         <source>Pull from git</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="641"/>
+        <location filename="../src/mainwindow.cpp" line="660"/>
         <source>Pull changes from git</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="646"/>
+        <location filename="../src/mainwindow.cpp" line="665"/>
         <source>Add article</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="647"/>
+        <location filename="../src/mainwindow.cpp" line="666"/>
         <source>Add new article</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="665"/>
+        <location filename="../src/mainwindow.cpp" line="684"/>
         <source>There are unsaved changes.
 Do you want to save them?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="674"/>
+        <location filename="../src/mainwindow.cpp" line="693"/>
         <source>Files save failed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="789"/>
+        <location filename="../src/mainwindow.cpp" line="808"/>
         <source>&amp;%1 %2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -659,7 +705,7 @@ Do you want to save them?</source>
 <context>
     <name>MSProject</name>
     <message>
-        <location filename="../src/project.cpp" line="1030"/>
+        <location filename="../src/project.cpp" line="1033"/>
         <source>!!! Unnamed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -702,27 +748,27 @@ Do you want to save them?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="65"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="70"/>
         <source>Select folder to clone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="150"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="155"/>
         <source>Started</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="159"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="164"/>
         <source>Finished</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="163"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="168"/>
         <source>Check submodules</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/git/repopathwizardpage.cpp" line="185"/>
+        <location filename="../src/git/repopathwizardpage.cpp" line="190"/>
         <source>Check branches</source>
         <translation type="unfinished"></translation>
     </message>
@@ -735,12 +781,12 @@ Do you want to save them?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/git/submoduleswizardpage.cpp" line="34"/>
+        <location filename="../src/git/submoduleswizardpage.cpp" line="36"/>
         <source>Submodules to clone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/git/submoduleswizardpage.cpp" line="35"/>
+        <location filename="../src/git/submoduleswizardpage.cpp" line="37"/>
         <source>Select repository submodules to clone.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -777,7 +823,7 @@ Do you want to save them?</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/project.cpp" line="1303"/>
+        <location filename="../src/project.cpp" line="1310"/>
         <source>Add your article text here.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -785,47 +831,47 @@ Do you want to save them?</source>
 <context>
     <name>RstHighlighter</name>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="538"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="539"/>
         <source>Underline character count should be equal article name or greater</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="547"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="548"/>
         <source>Need an empty line after the article</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="560"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="561"/>
         <source>No need empty line here</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="572"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="573"/>
         <source>File path should consist only ASCII characters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="587"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="588"/>
         <source>File not exists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="600"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="601"/>
         <source>Need an empty line after the reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="625"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="626"/>
         <source>Term &apos;%1&apos; is not exists in glossary</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="647"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="648"/>
         <source>Reference with name &apos;%1&apos; is not exists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/editor/rsthighlighter.cpp" line="664"/>
+        <location filename="../src/editor/rsthighlighter.cpp" line="665"/>
         <source>Image with name &apos;%1&apos; is not exists</source>
         <translation type="unfinished"></translation>
     </message>
@@ -833,7 +879,7 @@ Do you want to save them?</source>
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/project.cpp" line="898"/>
+        <location filename="../src/project.cpp" line="899"/>
         <source>New project</source>
         <translation type="unfinished"></translation>
     </message>
@@ -841,7 +887,7 @@ Do you want to save them?</source>
 <context>
     <name>project</name>
     <message>
-        <location filename="../src/project.cpp" line="507"/>
+        <location filename="../src/project.cpp" line="508"/>
         <source>&lt;no document&gt;</source>
         <translation type="unfinished"></translation>
     </message>

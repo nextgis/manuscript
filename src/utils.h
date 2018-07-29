@@ -38,18 +38,19 @@ inline bool isAscii(const QString &text) {
 inline void setDocumentFont(QTextDocument *doc) {
     QFont font = doc->defaultFont();
 
-#ifdef Q_OS_WIN    
+#ifdef Q_OS_WIN
     font.setStyleHint(QFont::TypeWriter);
     font.setFamily("DejaVu Sans Mono");
     font.setPointSize(11);
-#elif defined(Q_OS_MAC)   
+#elif defined(Q_OS_MAC)
     font.setStyleHint(QFont::Monospace);
     font.setFamily("Monaco");
 #else
     font.setStyleHint(QFont::Monospace);
     font.setFamily("Ubuntu Mono");
-#endif    
-        
+    font.setPointSize(12);
+#endif
+
     font.setWeight(13);
     doc->setDefaultFont(font);
 }

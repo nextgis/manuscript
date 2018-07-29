@@ -56,6 +56,17 @@ MSMainWindow::MSMainWindow() : NGMainWindow(),
     QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono-Bold.ttf" );
     QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono-BoldOblique.ttf" );
     QFontDatabase::addApplicationFont ( ":/fonts/DejaVuSansMono-Oblique.ttf" );
+
+    tr("&Edit");
+    tr("&Format");
+    tr("&Notes");
+    tr("&Build");
+    tr("&Git");
+    tr("&Options");
+    tr("Edit");
+    tr("Format");
+    tr("Build");
+    tr("Git");
 }
 
 MSMainWindow::~MSMainWindow()
