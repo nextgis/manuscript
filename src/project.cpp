@@ -1457,14 +1457,20 @@ bool MSProject::hasReference(const QString &name) const
     return m_bookmarks->itemByName(name) != nullptr;
 }
 
-bool MSProject::hasFile(const QString &fileName) const
+bool MSProject::hasFile(const QString &fileName, bool relative) const
 {
-    QFileInfo info(m_filePath);
-    QString dir = info.path();
-    QString fixedFileName(fileName);
-    fixedFileName = fixedFileName.replace('/', QDir::separator());
+    QString check_str;
+    if(relative) {
+        QFileInfo info(m_filePath);
+        QString dir = info.path();
+        QString fixedFileName(fileName);
+        fixedFileName = fixedFileName.replace('/', QDir::separator());
+        check_str = dir + QDir::separator() + fixedFileName;
+    }
+    else {
+        check_str = fileName;
+    }
 
-    QString check_str = dir + QDir::separator() + fixedFileName;
     QStringList testExt = m_extensions;
     testExt << "";
     foreach(const QString &ext, testExt) {

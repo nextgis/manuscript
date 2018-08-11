@@ -224,7 +224,7 @@ public:
     PlainModel *picturesModel() const;
     FilesModel *filesModel() const;
     bool hasReference(const QString &name) const;
-    bool hasFile(const QString &fileName) const;
+    bool hasFile(const QString &fileName, bool relative = true) const;
     bool hasImage(const QString &name) const;
     bool hasTerm(const QString &name) const;
     QString getFileByName(const QString &name) const;

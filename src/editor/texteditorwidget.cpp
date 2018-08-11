@@ -351,7 +351,12 @@ MSLink MSTextEditorWidget::findLinkAt(const QTextCursor &cursor)
     MSProject &project = MSMainWindow::instance()->project();
     QString probableTocItem = blockText.trimmed();
     if(probableTocItem.indexOf(' ') == -1) {
-        if(project.hasFile(probableTocItem)) {
+        QFileInfo info(m_filePath);
+        QString dir = info.path();
+        QString fixedFileName(probableTocItem);
+        fixedFileName = fixedFileName.replace('/', QDir::separator());
+
+        if(project.hasFile(dir + QDir::separator() + fixedFileName, false)) {
             pos = blockText.indexOf(probableTocItem);
             return MSLink(probableTocItem, MSLink::LocalLink,
                           cursor.block().position() + pos,
