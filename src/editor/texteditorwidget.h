@@ -107,6 +107,7 @@ public:
     void scrollToLine(int line);
     void formatText(enum TextFormat format);
     void addNote(enum NoteType format);
+    void addHeader(int level);
 
     // QWidget interface
     void setFilePath(const QString &filePath);

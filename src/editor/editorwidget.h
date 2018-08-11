@@ -57,6 +57,7 @@ public:
     void addNote(enum MSTextEditorWidget::NoteType type);
     void updateSelections(const QModelIndex &fileIdx,
                           const QModelIndex &articleIdx);
+    void addHeader(int level);
 
     QToolButton *navPanelButton() const;
     QToolButton *bottomPanelButton() const;

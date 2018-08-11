@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="f" cx="24.837" cy="36.421" r="15.645" gradientTransform="matrix(1 0 0 .53672 0 16.873)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#f)" fill-rule="evenodd" d="M 40.481863 36.421127 A 15.644737 8.3968935 0 1 1 9.1923885,36.421127 A 15.644737 8.3968935 0 1 1 40.481863 36.421127 z" color="#000" opacity=".2" style="marker:none" transform="matrix(1.47014 0 0 .53547 -12.764 20.915)"/>
+  <g transform="matrix(1, 0, 0, 1, 12.398041, 9.580304)">
+    <polygon points="-7.734 30.789 0.167 30.778 0.2 15.963 11.232 15.898 11.232 30.811 19.199 30.735 19.166 -4.662 11.19 -4.619 11.233 8.625 0.2 8.603 0.177 -4.652 -7.831 -4.684" style="fill: rgb(41, 98, 171);"/>
+    <polygon points="-6.871 29.909 -0.795 29.898 -0.965 14.931 12.196 14.764 12.145 29.931 18.288 29.805 18.204 -3.768 12.255 -3.776 12.247 9.773 -0.915 9.7 -0.988 -3.656 -6.765 -3.688" style="stroke: rgb(206, 226, 239); stroke-width: 0.6px; fill: rgb(85, 147, 218);"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 12.398041, 9.580304)">
+    <polygon style="fill: rgb(216, 216, 216); stroke: rgb(45, 93, 151);" points="24.856 30.315 30.343 30.423 30.288 13.257 26.486 13.366 22.52 15.43 22.411 18.907 24.91 18.363"/>
+    <polygon style="stroke: rgb(207, 223, 242); stroke-width: 0.6px; fill: rgb(85, 154, 218);" points="25.297 29.94 29.909 29.988 30.017 13.564 26.571 13.631 22.781 15.671 22.695 18.465 25.291 17.982" transform=""/>
+  </g>
+</svg>

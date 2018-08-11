@@ -71,16 +71,26 @@
             "name": "&Format",
             "actions": [
                 {
-                    "key": "format.h1",
-                    "type": "action"
-                },
-                {
-                    "key": "format.h2",
-                    "type": "action"
-                },
-                {
-                    "key": "format.h3",
-                    "type": "action"
+                    "name": "&Headers",
+                    "type": "menu",
+                    "actions": [
+                        {
+                            "key": "format.headers.h1",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.headers.h2",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.headers.h3",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.headers.h4",
+                            "type": "action"
+                        }
+                    ]
                 },
                 {
                     "type": "separator"
@@ -232,6 +242,28 @@
             "name": "Format",
             "allowedAreas": ["top", "bottom"],
             "actions": [
+                {
+                    "key": "format.headers",
+                    "type": "menu",
+                    "actions": [
+                        {
+                            "key": "format.headers.h1",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.headers.h2",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.headers.h3",
+                            "type": "action"
+                        },
+                        {
+                            "key": "format.headers.h4",
+                            "type": "action"
+                        }
+                    ]
+                },
                 {
                     "key": "format.bold",
                     "type": "action"

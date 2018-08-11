@@ -54,6 +54,7 @@ public:
     void updateSelections(const QModelIndex &fileIdx,
                           const QModelIndex &articleIdx);
     void appendText(const QString &text, enum MSOutputWidget::TextTypes format);
+    void addHeader(int level);
 
 private:
     void hideNavigation();

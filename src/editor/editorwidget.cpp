@@ -327,6 +327,13 @@ void MSEditorWidget::updateSelections(const QModelIndex &fileIdx,
     }
 }
 
+void MSEditorWidget::addHeader(int level)
+{
+    if(hasCurrentDocument()) {
+        m_editorWidget->addHeader(level);
+    }
+}
+
 QToolButton *MSEditorWidget::navPanelButton() const
 {
     return m_navPanelButton;

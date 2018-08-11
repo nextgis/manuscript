@@ -16,6 +16,7 @@
         <file alias="git-import.svg">icons/git-import.svg</file>
         <file alias="git-pull.svg">icons/git-pull.svg</file>
         <file alias="git-push.svg">icons/git-push.svg</file>
+        <file alias="h1.svg">icons/h1.svg</file>
     </qresource>
     <qresource prefix="/">
         <file>interface.json</file>

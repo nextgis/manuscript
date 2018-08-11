@@ -184,6 +184,47 @@ void MSTextEditorWidget::addNote(MSTextEditorWidget::NoteType format)
     setTextCursor(cursor);
 }
 
+void MSTextEditorWidget::addHeader(int level)
+{
+    QChar underlineChar;
+    switch (level) {
+    case 1:
+        underlineChar = '=';
+        break;
+    case 2:
+        underlineChar = '-';
+        break;
+    case 3:
+        underlineChar = '^';
+        break;
+    case 4:
+        underlineChar = '"';
+        break;
+    }
+
+    QTextCursor cursor = textCursor();
+    int len = cursor.block().length();
+    if(len > 1) {
+        cursor.setPosition(cursor.block().position() + len);
+        cursor.beginEditBlock();
+        for(int i = 0; i < len; ++i) {
+            cursor.insertText(underlineChar);
+        }
+        cursor.insertText("\n");
+        cursor.endEditBlock();
+    }
+    else {
+        cursor.beginEditBlock();
+        QString name = tr("New article") + QLatin1String("\n");
+        cursor.insertText(name);
+        for(int i = 0; i < name.size(); ++i) {
+            cursor.insertText(underlineChar);
+        }
+        cursor.insertText("\n");
+        cursor.endEditBlock();
+    }
+}
+
 
 void MSTextEditorWidget::mouseMoveEvent(QMouseEvent *event)
 {

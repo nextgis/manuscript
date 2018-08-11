@@ -59,6 +59,7 @@ MSMainWindow::MSMainWindow() : NGMainWindow(),
 
     QT_TRANSLATE_NOOP("NGMainWindow","&Edit");
     QT_TRANSLATE_NOOP("NGMainWindow","&Format");
+    QT_TRANSLATE_NOOP("NGMainWindow","&Headers");
     QT_TRANSLATE_NOOP("NGMainWindow","&Notes");
     QT_TRANSLATE_NOOP("NGMainWindow","&Build");
     QT_TRANSLATE_NOOP("NGMainWindow","&Git");
@@ -68,6 +69,7 @@ MSMainWindow::MSMainWindow() : NGMainWindow(),
     QT_TRANSLATE_NOOP("NGMainWindow","Build");
     QT_TRANSLATE_NOOP("NGMainWindow","Git");
     QT_TRANSLATE_NOOP("NGMainWindow","Notes");
+    QT_TRANSLATE_NOOP("NGMainWindow","Headers");
 }
 
 MSMainWindow::~MSMainWindow()
@@ -503,6 +505,26 @@ void MSMainWindow::addArticle()
     }
 }
 
+void MSMainWindow::addHeader1()
+{
+    m_centralWidget->addHeader(1);
+}
+
+void MSMainWindow::addHeader2()
+{
+    m_centralWidget->addHeader(2);
+}
+
+void MSMainWindow::addHeader3()
+{
+    m_centralWidget->addHeader(3);
+}
+
+void MSMainWindow::addHeader4()
+{
+    m_centralWidget->addHeader(4);
+}
+
 void MSMainWindow::onArticlesContextMenu(const QPoint &point)
 {
     if(m_project.filePath().isEmpty()) {
@@ -626,6 +648,36 @@ void MSMainWindow::createCommands()
     runAct->setDisabled(true);
     connect(runAct, &QAction::triggered, this, &MSMainWindow::runProject);
     m_commands["build.run"] = runAct;
+
+    QAction *headersAct = new QAction(QIcon(":/icons/h1.svg"), tr("&Headers"), this);
+    headersAct->setStatusTip(tr("Show insert header menu"));
+    connect(headersAct, &QAction::triggered, this, &MSMainWindow::addHeader1);
+
+    m_commands["format.headers"] = headersAct;
+
+    QAction *h1Act = new QAction(tr("Header 1"), this);
+    h1Act->setStatusTip(tr("Add header 1"));
+    h1Act->setDisabled(true);
+    connect(h1Act, &QAction::triggered, this, &MSMainWindow::addHeader1);
+    m_commands["format.headers.h1"] = h1Act;
+
+    QAction *h2Act = new QAction(tr("Header 2"), this);
+    h2Act->setStatusTip(tr("Add header 2"));
+    h2Act->setDisabled(true);
+    connect(h2Act, &QAction::triggered, this, &MSMainWindow::addHeader2);
+    m_commands["format.headers.h2"] = h2Act;
+
+    QAction *h3Act = new QAction(tr("Header 3"), this);
+    h3Act->setStatusTip(tr("Add header 3"));
+    h3Act->setDisabled(true);
+    connect(h3Act, &QAction::triggered, this, &MSMainWindow::addHeader3);
+    m_commands["format.headers.h3"] = h3Act;
+
+    QAction *h4Act = new QAction(tr("Header 4"), this);
+    h4Act->setStatusTip(tr("Add header 4"));
+    h4Act->setDisabled(true);
+    connect(h4Act, &QAction::triggered, this, &MSMainWindow::addHeader4);
+    m_commands["format.headers.h4"] = h4Act;
 
     QAction *notesAct = new QAction(QIcon(":/icons/text-notes.svg"), tr("&Notes"), this);
     notesAct->setStatusTip(tr("Show insert notes, tips, warnings menu"));
@@ -753,10 +805,18 @@ void MSMainWindow::updateActions()
 
     m_commands["format.bold"]->setEnabled(m_centralWidget->hasCurrentDocument());
     m_commands["format.italic"]->setEnabled(m_centralWidget->hasCurrentDocument());
+
     m_commands["format.notes"]->setEnabled(m_centralWidget->hasCurrentDocument());
     m_commands["format.notes.note"]->setEnabled(m_centralWidget->hasCurrentDocument());
     m_commands["format.notes.tip"]->setEnabled(m_centralWidget->hasCurrentDocument());
     m_commands["format.notes.warning"]->setEnabled(m_centralWidget->hasCurrentDocument());
+
+
+    m_commands["format.headers"]->setEnabled(m_centralWidget->hasCurrentDocument());
+    m_commands["format.headers.h1"]->setEnabled(m_centralWidget->hasCurrentDocument());
+    m_commands["format.headers.h2"]->setEnabled(m_centralWidget->hasCurrentDocument());
+    m_commands["format.headers.h3"]->setEnabled(m_centralWidget->hasCurrentDocument());
+    m_commands["format.headers.h4"]->setEnabled(m_centralWidget->hasCurrentDocument());
 }
 
 void MSMainWindow::updateSelections(const QString &filePath, int lineNo)

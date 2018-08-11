@@ -147,6 +147,11 @@ void MSCentralWidget::appendText(const QString &text,
     m_bottomWidget->appendText(text, format);
 }
 
+void MSCentralWidget::addHeader(int level)
+{
+    m_textEditor->addHeader(level);
+}
+
 void MSCentralWidget::formatText(enum MSTextEditorWidget::TextFormat type)
 {
     m_textEditor->formatText(type);

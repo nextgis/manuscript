@@ -94,6 +94,10 @@ protected slots:
     void gitPush();
     void gitPull();
     void addArticle();
+    void addHeader1();
+    void addHeader2();
+    void addHeader3();
+    void addHeader4();
 
 public slots:
     void onCursorPositionChanged(int pos, int col, int chars, int lines);
