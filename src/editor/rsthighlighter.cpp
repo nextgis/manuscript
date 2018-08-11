@@ -609,7 +609,50 @@ void RstHighlighter::check(const QString &text, enum RstBlockUserData::TextMarkC
     {
         MSProject &project = MSMainWindow::instance()->project();
         int pos = 0;
-        if((pos = text.indexOf(":term:")) != -1) {
+        // Check not filled keywords
+        while((pos = text.indexOf(":term", pos)) != -1) {
+            QTextBlock cb = currentBlock();
+            pos += 5;
+            if(text[pos] != ':') {
+                addMark(cb, RstBlockUserData::Error, checkType,
+                        tr("Invalid keyword '%1'. Mast end with colon").arg(":term"));
+                return;
+            }
+            else {
+                removeMark(cb, RstBlockUserData::Error, checkType);
+            }
+        }
+
+        pos = 0;
+        while((pos = text.indexOf(":ref", pos)) != -1) {
+            QTextBlock cb = currentBlock();
+            pos += 4;
+            if(text[pos] != ':') {
+                addMark(cb, RstBlockUserData::Error, checkType,
+                        tr("Invalid keyword '%1'. Mast end with colon").arg(":term"));
+                return;
+            }
+            else {
+                removeMark(cb, RstBlockUserData::Error, checkType);
+            }
+        }
+
+        pos = 0;
+        while((pos = text.indexOf(":numref", pos)) != -1) {
+            QTextBlock cb = currentBlock();
+            pos += 7;
+            if(text[pos] != ':') {
+                addMark(cb, RstBlockUserData::Error, checkType,
+                        tr("Invalid keyword '%1'. Mast end with colon").arg(":term"));
+                return;
+            }
+            else {
+                removeMark(cb, RstBlockUserData::Error, checkType);
+            }
+        }
+
+        pos = 0;
+        while((pos = text.indexOf(":term:", pos)) != -1) {
             int end = text.indexOf('`', pos + 7);
             if(end == -1) {
                 break;
@@ -624,9 +667,12 @@ void RstHighlighter::check(const QString &text, enum RstBlockUserData::TextMarkC
             else {
                 addMark(cb, RstBlockUserData::Warning, checkType,
                         tr("Term '%1' is not exists in glossary").arg(linkText));
+                return;
             }
         }
-        else if((pos = text.indexOf(":ref:")) != -1) {
+
+        pos = 0;
+        while((pos = text.indexOf(":ref:", pos)) != -1) {
             int end = text.indexOf('`', pos + 6);
             if(end == -1) {
                 break;
@@ -646,9 +692,12 @@ void RstHighlighter::check(const QString &text, enum RstBlockUserData::TextMarkC
             else {
                 addMark(cb, RstBlockUserData::Warning, checkType,
                         tr("Reference with name '%1' is not exists").arg(linkText));
+                return;
             }
         }
-        else if((pos = text.indexOf(":numref:")) != -1) {
+
+        pos = 0;
+        while((pos = text.indexOf(":numref:", pos)) != -1) {
             int end = text.indexOf('`', pos + 9);
             if(end == -1) {
                 break;
@@ -663,6 +712,7 @@ void RstHighlighter::check(const QString &text, enum RstBlockUserData::TextMarkC
             else {
                 addMark(cb, RstBlockUserData::Warning, checkType,
                         tr("Image with name '%1' is not exists").arg(linkText));
+                return;
             }
         }
     }
