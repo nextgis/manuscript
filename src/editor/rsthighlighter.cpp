@@ -615,7 +615,7 @@ void RstHighlighter::check(const QString &text, enum RstBlockUserData::TextMarkC
             pos += 5;
             if(text[pos] != ':') {
                 addMark(cb, RstBlockUserData::Error, checkType,
-                        tr("Invalid keyword '%1'. Mast end with colon").arg(":term"));
+                        tr("Invalid keyword '%1'. Must end with colon").arg(":term"));
                 return;
             }
             else {
@@ -629,7 +629,7 @@ void RstHighlighter::check(const QString &text, enum RstBlockUserData::TextMarkC
             pos += 4;
             if(text[pos] != ':') {
                 addMark(cb, RstBlockUserData::Error, checkType,
-                        tr("Invalid keyword '%1'. Mast end with colon").arg(":term"));
+                        tr("Invalid keyword '%1'. Must end with colon").arg(":term"));
                 return;
             }
             else {
@@ -643,7 +643,7 @@ void RstHighlighter::check(const QString &text, enum RstBlockUserData::TextMarkC
             pos += 7;
             if(text[pos] != ':') {
                 addMark(cb, RstBlockUserData::Error, checkType,
-                        tr("Invalid keyword '%1'. Mast end with colon").arg(":term"));
+                        tr("Invalid keyword '%1'. Must end with colon").arg(":term"));
                 return;
             }
             else {

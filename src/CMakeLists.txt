@@ -176,13 +176,28 @@ if(MSVC)
     set(PROJECT_SOURCES ${PROJECT_SOURCES} res/manuscript.rc)
 endif()
 
-add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE ${MOC_SRCS} ${PROJECT_HEADERS} ${PROJECT_SOURCES} ${RESOURCES} ${UI_HEADERS} ${QM_FILES})
+if(CMAKE_BUILD_TYPE STREQUAL "Release")
+    configure_file(${PROJECT_SOURCE_DIR}/cmake/qt.conf.cmake.in ${CMAKE_BINARY_DIR}/qt.conf IMMEDIATE @ONLY)
+endif()
+
+add_executable(${PROJECT_NAME} WIN32 MACOSX_BUNDLE ${MOC_SRCS} ${PROJECT_HEADERS} ${PROJECT_SOURCES} ${RESOURCES} ${UI_HEADERS} ${QM_FILES} ${CMAKE_BINARY_DIR}/qt.conf)
 
 if(OSX_FRAMEWORK)
+
+
     set_target_properties(${PROJECT_NAME} PROPERTIES INSTALL_RPATH "@executable_path/../../../../Library/Frameworks;@executable_path/../Frameworks")
 
     set_property(SOURCE ${QM_FILES} PROPERTY MACOSX_PACKAGE_LOCATION "Resources/translations")
+if(CMAKE_BUILD_TYPE STREQUAL "Release")
+    set_property(SOURCE ${CMAKE_BINARY_DIR}/qt.conf PROPERTY MACOSX_PACKAGE_LOCATION "Resources")
 endif()
+endif()
+
+# For debug
+#     add_custom_command(TARGET ${PROJECT_NAME}
+#         POST_BUILD COMMAND
+#         ${CMAKE_INSTALL_NAME_TOOL} -add_rpath "~/Applications/NextGIS/Library/Frameworks/"
+#         $<TARGET_FILE:${PROJECT_NAME}>)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets ${NGSTD_LIBRARIES})
 

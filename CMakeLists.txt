@@ -3,7 +3,7 @@
 # Purpose:  cmake script
 # Author:   Dmitry Baryshnikov, bishop.dev@gmail.com
 #***************************************************************************
-#   Copyright (C) 2015-2018 NextGIS, info@nextgis.ru
+#   Copyright (C) 2015-2019 NextGIS, info@nextgis.ru
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
