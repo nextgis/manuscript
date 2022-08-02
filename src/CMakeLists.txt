@@ -44,7 +44,7 @@ if(WITH_Qt5_EXTERNAL)
         endif()
     endif()
 endif()
-find_anyproject(NGSTD REQUIRED COMPONENTS core5 framework5)
+find_anyproject(NGSTD REQUIRED COMPONENTS core framework)
 
 if(CMAKE_VERSION VERSION_LESS "3.1")
     if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
